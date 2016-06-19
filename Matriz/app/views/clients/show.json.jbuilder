@@ -1,0 +1,1 @@
+json.extract! @client, :id, :name, :CPF, :CNPJ, :RG, :adress, :adrees_number, :neighborhood, :city, :state, :CEP, :adress_complement, :email, :marital_status, :company_name, :trading_name, :created_at, :updated_at
