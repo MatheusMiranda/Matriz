@@ -5,13 +5,13 @@ class CreateClients < ActiveRecord::Migration
       t.integer :CPF
       t.integer :CNPJ
       t.integer :RG
-      t.string :adress
-      t.integer :adrees_number
+      t.string :address
+      t.integer :address_number
       t.string :neighborhood
       t.string :city
       t.string :state
       t.integer :CEP
-      t.text :adress_complement
+      t.text :address_complement
       t.string :email
       t.string :marital_status
       t.string :company_name

@@ -11,26 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160619032609) do
+ActiveRecord::Schema.define(version: 20160619185039) do
 
   create_table "clients", force: :cascade do |t|
     t.string   "name"
     t.integer  "CPF"
     t.integer  "CNPJ"
     t.integer  "RG"
-    t.string   "adress"
-    t.integer  "adrees_number"
+    t.string   "address"
+    t.integer  "address_number"
     t.string   "neighborhood"
     t.string   "city"
     t.string   "state"
     t.integer  "CEP"
-    t.text     "adress_complement"
+    t.text     "address_complement"
     t.string   "email"
     t.string   "marital_status"
     t.string   "company_name"
     t.string   "trading_name"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string   "name"
+    t.string   "owner"
+    t.text     "description"
+    t.string   "responsible"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end
